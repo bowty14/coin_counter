@@ -20,6 +20,10 @@ describe("CoinCounter", () => {
     const number = .25;
     expect( counterCoin.changeCounter(number)).toEqual([1,0,0,0]);
   });
+  test("Should return 1 dime", () => {
+    const number = 0.1;
+    expect(counterCoin.changeCounter(number)).toEqual([0, 1, 0, 0]);
+  });
 
 
 
