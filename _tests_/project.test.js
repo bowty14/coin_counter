@@ -56,6 +56,10 @@ describe("CountCoins", () => {
     const number = "cat";
     expect(coinCounter.countCoins(number, quarter, dime, nickel, penny)).toEqual("Not a number");
   });
+  test("Should return zeros for all coin amounts", () => {
+    const number = 0;
+    expect(coinCounter.countCoins(number, quarter, dime, nickel, penny)).toEqual("quarters 0. dimes 0. nickels 0. pennies 0.");
+  });
 });
 
 
