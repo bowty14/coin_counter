@@ -1,12 +1,12 @@
-# Cocktail Roulette
+# Coin counter
 
-#### JavaScript & jQuery Project for Epicodus, 04.22.2020
+#### JavaScript & jQuery Project for Epicodus, 06.22.2020
 
-#### By **Reid Ashwill & Tyler Bowerman**
+#### By **Celeste Field & Tyler Bowerman**
 
 ## Description
 
-A random cocktail generator.
+
 
 ## Specifications
 
@@ -36,11 +36,9 @@ A random cocktail generator.
 * Node
 * Webpack
 
-_To view live:_
-* [Click here!](https://pensive-goldwasser-dd3f8d.netlify.app/)
 
 ### License
 
 *This software is licensed under the MIT license*
 
-Copyright (c) 2020 **Reid Ashwill & Tyler Bowerman**
+Copyright (c) 2020 **Celeste Field & Tyler Bowerman**
