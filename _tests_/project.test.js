@@ -58,7 +58,7 @@ describe("CountCoins", () => {
   });
   test("Should return zeros for all coin amounts", () => {
     const number = 0;
-    expect(coinCounter.countCoins(number, quarter, dime, nickel, penny)).toEqual("quarters 0. dimes 0. nickels 0. pennies 0.");
+    expect(coinCounter.countCoins(number, quarter, dime, nickel, penny)).toEqual("With this amount 0, you would have 0 quarter(s), 0 dime(s), 0 nickel(s), 0 penny(ies).");
   });
 });
 

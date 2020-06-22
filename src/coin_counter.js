@@ -45,7 +45,7 @@ export class CoinCounterClosure {
     if (isNaN(num)) {
       return "Not a number";
     } else if (num < 0.01) {
-      return `With this amount ${num}, you would have ${quarters} quarter(s), ${dimes} dime(s), ${nickels} nickel(s), ${pennies} penny(ies). `;
+      return `With this amount ${num}, you would have ${quarters} quarter(s), ${dimes} dime(s), ${nickels} nickel(s), ${pennies} penny(ies).`;
 
     } else if (num / quarter >= 1) {
       quarters = Math.trunc(num / quarter);
