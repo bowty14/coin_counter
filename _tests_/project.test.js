@@ -53,18 +53,18 @@ describe("CountCoins", () => {
   let penny = 0;
 
   test("Should return message 'Not a number'", () => {
-    const number = "cat";
-    expect(coinCounter.countCoins(number, quarter, dime, nickel, penny)).toEqual("Not a number");
+    const amount = "cat";
+    expect(coinCounter.countCoins(amount, quarter, dime, nickel, penny)).toEqual("Not a number");
   });
   
   test("Should return zeros for all coin amounts", () => {
-    const number = 0;
-    expect(coinCounter.countCoins(number, quarter, dime, nickel, penny)).toEqual("With this amount 0, you would have 0 quarter(s), 0 dime(s), 0 nickel(s), 0 penny(ies).");
+    const amount = 0;
+    expect(coinCounter.countCoins(amount, quarter, dime, nickel, penny)).toEqual("With this amount you would have 0 quarter(s), 0 dime(s), 0 nickel(s), 0 penny(ies).");
   });
 
   test("Should return 1 quarter", () => {
-    const number = .25;
-    expect(coinCounter.countCoins(number, quarter, dime, nickel, penny)).toEqual("With this amount 0, you would have 1 quarter(s), 0 dime(s), 0 nickel(s), 0 penny(ies).");
+    const amount = 0.25;
+    expect(coinCounter.countCoins(amount, quarter, dime, nickel, penny)).toEqual("With this amount you would have 1 quarter(s), 0 dime(s), 0 nickel(s), 0 penny(ies).");
   });
 });
 
