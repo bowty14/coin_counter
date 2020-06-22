@@ -36,6 +36,10 @@ describe("CoinCounter", () => {
     const number = 0.41;
     expect(counterCoin.changeCounter(number)).toEqual([1, 1, 1, 1]);
   });
+  test("Should return 3 quarters, 1 dime, 1 nickel, 4 pennies", () => {
+    const number = 0.94;
+    expect(counterCoin.changeCounter(number)).toEqual([3, 1, 1, 4]);
+  });
 
 
 
