@@ -86,10 +86,10 @@ describe("CountCoins", () => {
     const amount = 0.41;
     expect(coinCounter.countCoins(amount, quarter, dime, nickel, penny)).toEqual("With this amount you would have 1 quarter(s), 1 dime(s), 1 nickel(s), 1 penny(ies).");
   });
+
+  test("Should return 3 quarters, 1 dime, 1 nickel, 4 pennies", () => {
+    const amount = 0.94;
+    expect(coinCounter.countCoins(amount, quarter, dime, nickel, penny)).toEqual("With this amount you would have 3 quarter(s), 1 dime(s), 1 nickel(s), 4 penny(ies).");
+  });
+  
 });
-
-
-
-
-
-
