@@ -32,6 +32,10 @@ describe("CoinCounter", () => {
     const number =  0.01;
     expect(counterCoin.changeCounter(number)).toEqual([0,0,0,1]);
   });
+  test("should return 1 of each coin", () => {
+    const number = 0.41;
+    expect(counterCoin.changeCounter(number)).toEqual([1, 1, 1, 1]);
+  });
 
 
 
