@@ -1,4 +1,4 @@
-import { CoinCounter } from "./../src/index.js";
+import { CoinCounter } from "./../src/coin_counter.js";
 
 describe("CoinCounter", () => {
   let counterCoin = new CoinCounter();
@@ -9,7 +9,17 @@ describe("CoinCounter", () => {
   let pennies = 0;
 
   test("Should return message on 'Not a number'", () => {
-    const number = "dog"; 
-    expect(changeCounter);
-  }
-}
+    const number = "dog";
+    expect(counterCoin.changeCounter(number, quarter, dime, nickel, penny)).toEqual("Not a number");
+  });
+
+
+
+
+
+
+
+
+
+
+});

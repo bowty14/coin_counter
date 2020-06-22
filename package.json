@@ -1,5 +1,5 @@
 {
-  "name": "cocktail-roulette",
+  "name": "coin-counter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "debug": "node --inspect node_modules/.bin/jest --runInBand"
   },
   "keywords": [],
-  "author": "Tyler Bowerman & Reid Ashwill",
+  "author": "Tyler Bowerman & Celeste Fields",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.6.4",
