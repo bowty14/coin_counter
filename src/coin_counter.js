@@ -35,3 +35,37 @@ export class CoinCounter {
     }
   }
 }
+
+export class CoinCounterClosure {
+  countCoins(num, quarters, dimes, nickels, pennies) {
+    const quarter = 0.25;
+    const dime = 0.1;
+    const nickel = 0.05;
+    const penny = 0.01;
+    if (isNaN(num)) {
+      return "Not a number";
+    } else if (num < 0.01) {
+      return `With this amount ${num}, you would have ${quarters} quarter(s), ${dimes} dime(s), ${nickels} nickel(s), ${pennies} penny(ies). `;
+
+    } else if (num / quarter >= 1) {
+      quarters = Math.trunc(num / quarter);
+      num = (num % quarter).toFixed(2);
+      return this.countCoins(num, quarters, dimes, nickels, pennies);
+
+    } else if (num / dime >= 1) {
+      dimes = Math.trunc(num / dime);
+      num = (num % dime).toFixed(2);
+      return this.countCoins(num, quarters, dimes, nickels, pennies);
+
+    } else if (num / nickel >= 1){
+      nickels = Math.trunc(num / nickel);
+      num = (num % dime).toFixed(2);
+      return this.countCoins(num, quarters, dimes, nickels, pennies);
+
+    } else {
+      pennies = Math.trunc(num / penny);
+      num = (num % penny).toFixed(2);
+      return this.countCoins(num, quarters, dimes, nickels, pennies);
+    }
+  }
+}

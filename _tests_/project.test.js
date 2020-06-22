@@ -40,12 +40,26 @@ describe("CoinCounter", () => {
     const number = 0.94;
     expect(counterCoin.changeCounter(number)).toEqual([3, 1, 1, 4]);
   });
-
-
-
-
-
-
-
-
 });
+// <------------------------------------Closures------------------------------------------>
+import { CoinCounterClosure } from "./../src/coin_counter.js";
+
+describe("CountCoins", () => {
+  let coinCounter = new CoinCounterClosure();
+
+  let quarter = 0;
+  let dime = 0;
+  let nickel = 0;
+  let penny = 0;
+
+  test("Should return message 'Not a number'", () => {
+    const number = "cat";
+    expect(coinCounter.countCoins(number, quarter, dime, nickel, penny)).toEqual("Not a number");
+  });
+});
+
+
+
+
+
+
