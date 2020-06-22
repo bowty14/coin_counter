@@ -1,7 +1,7 @@
 export class CoinCounter {
   changeCounter(num) {
     if (isNaN(num)) {
-      return "Not a number"
+      return "Not a number";
     }
     const quarter = 0.25;
     const dime = 0.1;
@@ -30,7 +30,7 @@ export class CoinCounter {
         return recurse(result);
       } else {
       result[3] = Math.trunc(num / penny);
-        return recurse(result);
+        return result;
       }
     }
   }
