@@ -66,6 +66,11 @@ describe("CountCoins", () => {
     const amount = 0.25;
     expect(coinCounter.countCoins(amount, quarter, dime, nickel, penny)).toEqual("With this amount you would have 1 quarter(s), 0 dime(s), 0 nickel(s), 0 penny(ies).");
   });
+
+  test("Should return 1 dime", () => {
+    const amount = 0.10;
+    expect(coinCounter.countCoins(amount, quarter, dime, nickel, penny)).toEqual("With this amount you would have quarter(s), 1 dime(s), 0 nickel(s), 0 penny(ies).");
+  });
 });
 
 
