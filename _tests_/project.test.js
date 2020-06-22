@@ -3,10 +3,10 @@ import { CoinCounter } from "./../src/coin_counter.js";
 describe("CoinCounter", () => {
   let counterCoin = new CoinCounter();
 
-  let quarters = 0;
-  let dimes = 0;
-  let nickels = 0;
-  let pennies = 0;
+  let quarter = 0;
+  let dime = 0;
+  let nickel = 0;
+  let penny = 0;
 
   test("Should return message on 'Not a number'", () => {
     const number = "dog";
