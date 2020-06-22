@@ -16,7 +16,10 @@ describe("CoinCounter", () => {
     const number = 0;
     expect( counterCoin.changeCounter(number)).toEqual([0,0,0,0]);
   });
-
+  test("Should return 1 quarter", () => {
+    const number = .25;
+    expect( counterCoin.changeCounter(number)).toEqual([1,0,0,0]);
+  });
 
 
 
