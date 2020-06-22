@@ -12,7 +12,10 @@ describe("CoinCounter", () => {
     const number = "dog";
     expect(counterCoin.changeCounter(number, quarter, dime, nickel, penny)).toEqual("Not a number");
   });
-
+  test("Should return zeros for all coin amounts", () => {
+    const number = 0;
+    expect( counterCoin.changeCounter(number)).toEqual([0,0,0,0]);
+  });
 
 
 
