@@ -59,7 +59,7 @@ export class CoinCounterClosure {
 
     } else if (num / nickel >= 1){
       nickels = Math.trunc(num / nickel);
-      num = (num % dime).toFixed(2);
+      num = (num % nickel).toFixed(2);
       return this.countCoins(num, quarters, dimes, nickels, pennies);
 
     } else {
