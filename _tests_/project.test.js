@@ -30,7 +30,7 @@ describe("CoinCounter", () => {
   });
   test("Should return pennies", () => {
     const number =  0.01;
-    expect(coounterCoin.changeCounter(number)).toEqual([0,0,0,1]);
+    expect(counterCoin.changeCounter(number)).toEqual([0,0,0,1]);
   });
 
 
